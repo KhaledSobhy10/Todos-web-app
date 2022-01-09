@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Todo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Todos</h1>
+        <h2 id="summery" class="header__subtitle"></h1>
+      </div>
+    </header>
+    <div class="actions">
+      <div class="actions__container actions__container--spaced">
+        <input
+        id="filter-input"
+        type="text"
+        placeholder="Filter tasks here"
+        class="input"
+      />
+      <label id="hide-completed-cb" class="checkbox">
+        <input type="checkbox" name="completed" />
+        Hide completed
+      </label>
+      </div>
+    </div>
+   
+    <div class="container">
+      <div id="todos" ></div>
+      <form id="create-task-form" action="">
+        <input
+          type="text"
+          name="taskName"
+          placeholder="Enter task name here..."
+          class="input"
+        />
+        <button class="button">Add</button>
+      </form>
+    </div>
+    
+    
+
+    <script src="scripts/bundle.js"></script>
+  </body>
+</html>
